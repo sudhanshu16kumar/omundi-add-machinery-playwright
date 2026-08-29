@@ -1,0 +1,21 @@
+{
+  "name": "omundi-machinery-dual-mode-framework",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "add:time": "playwright test tests/machinery/add-rent-by-time.spec.ts --headed --project=chromium",
+    "add:usage": "playwright test tests/machinery/add-rent-by-usage.spec.ts --headed --project=chromium",
+    "add:time:headless": "playwright test tests/machinery/add-rent-by-time.spec.ts --project=chromium",
+    "add:usage:headless": "playwright test tests/machinery/add-rent-by-usage.spec.ts --project=chromium",
+    "debug:time": "playwright test tests/machinery/add-rent-by-time.spec.ts --debug --project=chromium",
+    "debug:usage": "playwright test tests/machinery/add-rent-by-usage.spec.ts --debug --project=chromium",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^24.0.0",
+    "dotenv": "^16.6.1",
+    "typescript": "^5.9.0"
+  }
+}
